@@ -1,8 +1,6 @@
 "use client"
-import Image from "next/image";
 import { useEffect } from "react";
-// import { BatchData, BatchTransaction } from "sdk";
-import { BatchTransaction, BatchData } from "token_batch_sdk";
+import { BatchData, BatchTransaction } from "token_batch_sdk";
 
 
 export default function Home() {
@@ -20,8 +18,6 @@ export default function Home() {
   }, []);
 
   const sendBatchTxn = async() => {
-    // const response = await batch.init();
-      // console.log("response ", response);
     const batchData: BatchData[] = [
       {
         recipient: "0xaed223306A006975c00A939dBEB6d7eBd9C04d80",
